@@ -6,9 +6,9 @@
 
 ![Decentralization](https://i.imgur.com/dXvOGTZ.pngs)
 
-The blockchain network has no central authority — it is the very definition of a democratized system. Since it is a shared and immutable ledger, the information in it is open for anyone and everyone to see. Hence, anything that is built on the blockchain is by its very nature transparent and everyone involved is accountable for their actions.
+The blockchain network has **no central authority** — it is the very definition of a democratized system. Since it is a shared and immutable ledger, the information in it is open for anyone and everyone to see. Hence, anything that is built on the blockchain is by its very nature transparent and everyone involved is accountable for their actions.
 
-On the other hand, banks are a centralized system. You trust the bank, so you give them your money and they look after it, charging you fees in exchange. But what if computer code had been written that could handle all of that stuff? What if nobody needs to make transfers or back up balances? The only people who needed to be involved with your money was you. And anyone you're transacting with. No need for a bank to check the validity of your transactions, no extra fees for sending money overseas; nothing. It's all in the code. You take the bank out of the middle, and use the computer code as a means of connecting you directly with other people. The balances and the transactions are held by everyone, that way the code can quickly check what is and isn't valid. Once it does, it check everyone else's copy of the balances and transactions, to make sure neither of you have cheated anything.
+On the other hand, **banks are a centralized system**. You trust the bank, so you give them your money and they look after it, charging you fees in exchange. But what if computer code had been written that could handle all of that stuff? What if nobody needs to make transfers or back up balances? The only people who needed to be involved with your money was you. And anyone you're transacting with. No need for a bank to check the validity of your transactions, no extra fees for sending money overseas; nothing. It's all in the code. You take the bank out of the middle, and use the computer code as a means of connecting you directly with other people. The balances and the transactions are held by everyone, that way the code can quickly check what is and isn't valid. Once it does, it check everyone else's copy of the balances and transactions, to make sure neither of you have cheated anything.
 
 ## Blockchain Structure
 
@@ -17,3 +17,5 @@ On the other hand, banks are a centralized system. You trust the bank, so you gi
 ![Blockchain](https://i.imgur.com/Wuk0NJ1.png)
 
 So in the case of Bitcoin, the data is a history of monetary transactions. Every so called "block" contains a group of transactions, as well as a special alpha numeric string called a "hash". This hash is essentially a compression of all the data in the block that came before it. It changes drastically if any piece of data is altered.
+
+So what you get is a long line of transactions that very clearly and obviously falls apart if anyone tries to make a change to the history; this make 
