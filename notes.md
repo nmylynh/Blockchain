@@ -18,4 +18,20 @@ On the other hand, **banks are a centralized system**. You trust the bank, so yo
 
 So in the case of Bitcoin, the data is a history of monetary transactions. Every so called "block" contains a group of transactions, as well as a special alpha numeric string called a "hash". This hash is essentially a compression of all the data in the block that came before it. It changes drastically if any piece of data is altered.
 
-So what you get is a long line of transactions that very clearly and obviously falls apart if anyone tries to make a change to the history; this make 
+So what you get is a long line of transactions that very clearly and obviously falls apart if anyone tries to make a change to the history; this is what makes blockchains unalterable or immutable. If you made a transaction yesterday and want to erase it, every block after it would flag the change, because every block after it will be changed. This would then mean that the chain would not be identical to everyone else.
+
+### How does cryptocurrency relate to blockchains?
+
+Cryptocurrency is both an incentive and a means of exchange. The concept of having a nice orderly chain is all nice and good, but it falls apart without a reason for people to keep it this way. Without any consequences to altering blockchains, people still try to alter it somehow.
+
+This is where cryptocurrency comes in. Cryptocurrency is minted only through honest maintenance of the transaction history. When a valid block of transactions is submitted and accepted to the chain, the person who submitted it is rewarded with newly minted cryptocurrency. These people are called miners.
+
+The only way they get a reward is by submitting valid blocks. If you submit a fake or altered block, the other miners will discover it, and earn the reward themselves by submitting the valid block.
+
+## Conclusion
+
+1. **Decentralization** is the core principle behind blockchain technology. It's where you take power from one central authority, and create a better, more robust system by distributing that power to everyone.
+
+2. **Blockchains** are a method of storing data that makes it immutable. Each block stores a hashed version of the data in the previous block, ensuring that no change goes unnoticed.
+
+3. **Cryptocurrency** is the monetary incentive that is built into the network. The blockchain mints new coins for miners that maintain the integrity of the chain's transaction history.
