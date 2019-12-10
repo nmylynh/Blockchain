@@ -82,6 +82,7 @@ class Blockchain(object):
         """
         # TODO
         pass
+        # Proof is a SHA-256 hash with 3 leading zeros
         # return proof
 
     @staticmethod
@@ -119,9 +120,14 @@ def mine():
 
     response = {
         # TODO: Send a JSON response with the new block
+    
     }
 
     return jsonify(response), 200
+
+@app.route('/hello', methods=['GET'])
+def hello():
+    return jsonify('Hello world!'), 200
 
 
 @app.route('/chain', methods=['GET'])
