@@ -35,3 +35,29 @@ The only way they get a reward is by submitting valid blocks. If you submit a fa
 2. **Blockchains** are a method of storing data that makes it immutable. Each block stores a hashed version of the data in the previous block, ensuring that no change goes unnoticed.
 
 3. **Cryptocurrency** is the monetary incentive that is built into the network. The blockchain mints new coins for miners that maintain the integrity of the chain's transaction history.
+
+
+# Code a BlockChain
+
+Every time you have a key and value it's a hashtable. A hashtable is an implementation of a dictionary.
+
+JSON is transported in text through HTTP over the web over API endpoints over REST interfaces but you have to parse it. Takes text rep of JSON, turn it into a hash and puts it in an actual hash table with key and value, but they have to parse it first.
+
+But for these blockchains you do the opposite--you stringify the json key value to text and then you hash that text with the SHA-256 hashing algorithm, which is a deterministic algorithm. It's fast, efficient, and known to have a very even distribution. Hashing cannot be decrypted.
+
+Python hash looks at id of the input to hash and not the actual value.
+
+1 hex bit = 4 bits = 1 nybble
+
+Hexidemical counting system is a base 16 counting system.
+
+256 is 256 bits, which is 64 bytes.
+
+For bitcoin you have to have proof, where the algorithm allows for 256 characters to have 19 leading zeros. The Bitcoin proof-of-work algorithm requires a hash output with 19 leading zeros before a Block is accepted by the network and added to the Bitcoin blockchain.
+
+To guess and check it takes 75 computations per 12 minutes. Every transaction is evaluated every 18 minutes.
+
+Flask is a very light python framework.
+
+UUID is unique user identifier
+
