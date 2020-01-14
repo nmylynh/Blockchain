@@ -61,3 +61,34 @@ Flask is a very light python framework.
 
 UUID is unique user identifier
 
+### Blockchain syntax
+
+1. To create a block string:
+   1. You need to convert a python object to a json string
+
+```python
+block_string = json.dumps(block, sort_key=True).encode()
+```
+2. When you retrieve the blockchains it must match everyone else's order. `json.dumps()` is equivalent to `json.stringify()`. In this case, when you retrieve the blockchain dictionary (with `sorted_keys=True), it retrieves it sorted alphabetically, hashed. But if you have it in a different order, the hash will be different even though the data is the same.
+3. `encode()`: takes in a python strong which has a wrapper of metadata around it, which prevents it from being hashed
+   1. what it does is convert it from a python string into a byte string and strips off all of the metadata, enabling the use of the hash function
+   2. in javascript, an array is really an object, and has metadata associated with it, so you can treat it like an object and say
+4. Hashing the block with SHA256:
+   1. to convert the hash into a readable form--instead of having a hashed object, we want a string of hexidecimal, using `hexdigest()`
+   
+
+```python
+hash = hashlib.sha256(block_string).hexdigest()
+```
+
+#### Review
+
+1. create a dictionary to store our blocks
+2. chain will be our python list, or basically an array of our dictionary objects--and that is the BLOCK CHAIN
+3. in each block we have:
+   1.  an index to let us know how far we are
+   2. a timestamp for the transaction ledger
+   3. list of transactions
+   4. proof, which is the proof of work
+   5. previous hash, which, once we make our second block well look at the first block using the hash function
+      1. it will turn that block into a string, so JSON.dumps which is the python version of stringify
